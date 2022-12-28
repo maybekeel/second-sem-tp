@@ -1,0 +1,16 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/kar/spbspu-labs-tp-904-a/ivlicheva.karina/T3'
+echo "[C++ ] figures.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c figures.cpp -o figures.o
+echo "[C++ ] commands.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c commands.cpp -o commands.o
+echo "[C++ ] main.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c main.cpp -o main.o
+echo "[C++ ] ../common/iostructs.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c ../common/iostructs.cpp -o ../common/iostructs.o
+echo "[C++ ] ../common/StreamGuard.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c ../common/StreamGuard.cpp -o ../common/StreamGuard.o
+echo "[LINK] figures.o commands.o main.o ../common/iostructs.o ../common/StreamGuard.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -g figures.o commands.o main.o ../common/iostructs.o ../common/StreamGuard.o -o out
+make: Leaving directory '/home/kar/spbspu-labs-tp-904-a/ivlicheva.karina/T3'
+ 

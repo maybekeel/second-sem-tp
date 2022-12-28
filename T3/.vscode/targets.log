@@ -1,0 +1,407 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2014 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Fri May  6 19:57:03 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+WSLENV = ELECTRON_RUN_AS_NODE/w:
+# default
+.SHELLFLAGS := -c
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 7)
+CPPFLAGS = -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /home/kar/spbspu-labs-tp-904-a/ivlicheva.karina/T3
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 2)
+RM = rm -rf
+# environment
+VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"2b7693ea843d12cbb2e09a3b62281ac8.ru","_translationsConfigFile":"/home/kar/.vscode-server/data/clp/2b7693ea843d12cbb2e09a3b62281ac8.ru/tcf.json","_cacheRoot":"/home/kar/.vscode-server/data/clp/2b7693ea843d12cbb2e09a3b62281ac8.ru","_resolvedLanguagePackCoreLocation":"/home/kar/.vscode-server/data/clp/2b7693ea843d12cbb2e09a3b62281ac8.ru/57fd6d0195bb9b9d1b49f6da5db789060795de47","_corruptedFile":"/home/kar/.vscode-server/data/clp/2b7693ea843d12cbb2e09a3b62281ac8.ru/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /mnt/c/Users/ivlkar/AppData/Local/Programs/Microsoft VS Code/bin/code
+# makefile (from '../common/StreamGuard.d', line 1)
+MAKEFILE_LIST :=  Makefile figures.d commands.d main.d ../common/iostructs.d ../common/StreamGuard.d
+# 'override' directive
+GNUMAKEFLAGS := 
+# makefile (from 'Makefile', line 9)
+SOURCES := figures.cpp commands.cpp main.cpp ../common/iostructs.cpp ../common/StreamGuard.cpp
+# makefile (from 'Makefile', line 5)
+CXXFLAGS = -g
+# environment
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+VSCODE_CWD = /mnt/c/Users/ivlkar/AppData/Local/Programs/Microsoft VS Code
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/kar/.vscode-server/bin/57fd6d0195bb9b9d1b49f6da5db789060795de47/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/ivlkar/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ivlkar/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
+# environment
+XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
+# makefile (from 'Makefile', line 13)
+include := ../common
+# environment
+VSCODE_LOG_STACK = false
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 1)
+hidecmd := @
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /home/kar/spbspu-labs-tp-904-a/ivlicheva.karina/T3
+# environment
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-d6ad04e1-dcf9-484e-899a-99fec905d6cd.sock
+# environment
+WSL_INTEROP = /run/WSL/8_interop
+# environment
+PULSE_SERVER = /mnt/wslg/PulseServer
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/kar
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+LOGNAME = kar
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# makefile (from 'Makefile', line 11)
+DEPENDS := figures.d commands.d main.d ../common/iostructs.d ../common/StreamGuard.d
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# default
+MAKE_VERSION := 4.1
+# environment
+USER = kar
+# makefile
+.DEFAULT_GOAL := all
+# environment
+NAME = Code
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/ivlkar/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.2
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 15)
+EXECUTABLE = out
+# makefile (from 'Makefile', line 4)
+CXX = g++
+# environment
+LC_ALL = C
+# environment
+HOSTTYPE = x86_64
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+WAYLAND_DISPLAY = wayland-0
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+# makefile (from 'Makefile', line 10)
+OBJECTS := figures.o commands.o main.o ../common/iostructs.o ../common/StreamGuard.o
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+WSL_DISTRO_NAME = Ubuntu-18.04
+# variable set hash-table stats:
+# Load=80/1024=8%, Rehash=0, Collisions=3/131=2%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2080, inode 44135): 19 files, no impossibilities.
+# ../common (device 2080, inode 50160): 10 files, no impossibilities.
+
+# 29 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+%.o: %.cpp Makefile
+#  recipe to execute (from 'Makefile', line 32):
+		@echo "[C++ ] $@"
+		$(hidecmd)$(CXX) $(CPPFLAGS) $(addprefix -I, $(include)) $(CXXFLAGS) -MMD -MP -c $< -o $@
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+../common/iostructs.o: ../common/iostructs.cpp ../common/iostructs.hpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: out
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/8=0%
+
+.PHONY: all clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../common/StreamGuard.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+main.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-06 19:54:17.4032208
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-05 18:47:23.5641444
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../common/StreamGuard.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-06 19:42:44.5832208
+#  File has been updated.
+#  Successfully updated.
+
+../common/StreamGuard.hpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-06 19:36:36.6132208
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+commands.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-06 19:48:47.6832208
+#  File has been updated.
+#  Successfully updated.
+
+out: figures.o commands.o main.o ../common/iostructs.o ../common/StreamGuard.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-05-06 19:54:17.5132208
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/8=0%
+#  recipe to execute (from 'Makefile', line 26):
+		@echo "[LINK] $(OBJECTS)"
+		$(hidecmd)$(CXX) $(CPPFLAGS) $(CXXFLAGS) $^ -o $@
+
+main.o: main.cpp commands.hpp figures.hpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+commands.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-06 19:48:50.2032208
+#  File has been updated.
+#  Successfully updated.
+
+commands.hpp:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-05-06 19:56:16.5932208
+#  File has been updated.
+#  Successfully updated.
+
+../common/StreamGuard.o: ../common/StreamGuard.cpp ../common/StreamGuard.hpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../common/iostructs.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+figures.o: figures.cpp Makefile figures.cpp figures.hpp ../common/iostructs.hpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'figures'
+#  Last modified 2022-05-06 19:41:29.4232208
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 32):
+		@echo "[C++ ] $@"
+		$(hidecmd)$(CXX) $(CPPFLAGS) $(addprefix -I, $(include)) $(CXXFLAGS) -MMD -MP -c $< -o $@
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 22):
+		@echo "[CLEAN UP]"
+		$(hidecmd)$(RM) $(OBJECTS) $(DEPENDS) out
+
+# Not a target:
+../common/iostructs.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-06 19:42:44.4432208
+#  File has been updated.
+#  Successfully updated.
+
+../common/iostructs.hpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-04-27 20:02:29.7471669
+#  File has been updated.
+#  Successfully updated.
+
+commands.o: commands.cpp Makefile commands.cpp commands.hpp figures.hpp ../common/StreamGuard.hpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'commands'
+#  Last modified 2022-05-06 19:48:50.2232208
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := commands.o
+# automatic
+# % := 
+# automatic
+# * := commands
+# automatic
+# + := commands.cpp Makefile commands.cpp commands.hpp figures.hpp ../common/StreamGuard.hpp
+# automatic
+# | := 
+# automatic
+# < := commands.cpp
+# automatic
+# ^ := commands.cpp Makefile commands.hpp figures.hpp ../common/StreamGuard.hpp
+# automatic
+# ? := commands.hpp
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/19=11%
+#  recipe to execute (from 'Makefile', line 32):
+		@echo "[C++ ] $@"
+		$(hidecmd)$(CXX) $(CPPFLAGS) $(addprefix -I, $(include)) $(CXXFLAGS) -MMD -MP -c $< -o $@
+
+# Not a target:
+figures.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-05 19:24:49.4441444
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+main.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+figures.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-06 19:41:29.4132208
+#  File has been updated.
+#  Successfully updated.
+
+figures.hpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-05 18:56:08.1241444
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=26/1024=3%, Rehash=0, Collisions=10/88=11%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 45 / storage = 559 B / avg = 12 B
+# current buf: size = 8162 B / used = 559 B / count = 45 / avg = 12 B
+
+# strcache performance: lookups = 120 / hit rate = 62%
+# hash-table stats:
+# Load=45/8192=1%, Rehash=0, Collisions=2/120=2%
+# Finished Make data base on Fri May  6 19:57:03 2022
+
+ 

@@ -1,0 +1,14 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/kar/spbspu-labs-tp-904-a/ivlicheva.karina/T2'
+echo "[C++ ] iokeys.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c iokeys.cpp -o iokeys.o
+echo "[C++ ] DataStruct.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c DataStruct.cpp -o DataStruct.o
+echo "[C++ ] main.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c main.cpp -o main.o
+echo "[C++ ] ../common/iostructs.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c ../common/iostructs.cpp -o ../common/iostructs.o
+echo "[LINK] iokeys.o DataStruct.o main.o ../common/iostructs.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -g iokeys.o DataStruct.o main.o ../common/iostructs.o -o out
+make: Leaving directory '/home/kar/spbspu-labs-tp-904-a/ivlicheva.karina/T2'
+ 

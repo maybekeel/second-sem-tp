@@ -1,0 +1,23 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/kar/spbspu-labs-tp-904-a/ivlicheva.karina/T1'
+rm -rf *.o out *.d
+echo "[C++ ] ioparse.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -g  -MMD -MP -c -o ioparse.o ioparse.cpp 
+echo "[C++ ] shape.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -g  -MMD -MP -c -o shape.o shape.cpp 
+echo "[C++ ] rectangle.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -g  -MMD -MP -c -o rectangle.o rectangle.cpp 
+echo "[C++ ] base-operations.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -g  -MMD -MP -c -o base-operations.o base-operations.cpp 
+echo "[C++ ] polygon.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -g  -MMD -MP -c -o polygon.o polygon.cpp 
+echo "[C++ ] complexquad.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -g  -MMD -MP -c -o complexquad.o complexquad.cpp 
+echo "[C++ ] iodataset.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -g  -MMD -MP -c -o iodataset.o iodataset.cpp 
+echo "[C++ ] main.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -g  -MMD -MP -c -o main.o main.cpp 
+echo "[LINK] ioparse.o shape.o rectangle.o base-operations.o polygon.o complexquad.o iodataset.o main.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -g  ioparse.o shape.o rectangle.o base-operations.o polygon.o complexquad.o iodataset.o main.o -o out
+make: Leaving directory '/home/kar/spbspu-labs-tp-904-a/ivlicheva.karina/T1'
+ 
